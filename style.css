@@ -1,0 +1,589 @@
+/* ===== عام ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+/* ===== Navbar ===== */
+nav {
+    width: 100%;
+    padding: 15px 50px;
+    background: rgba(59, 20, 28, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fdd835;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fdd835;
+    transform: scale(1.1);
+}
+
+/* ===== Cart ===== */
+.cart-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.cart-container:hover .cart-icon {
+    color: #fdd835;
+    transform: scale(1.2);
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: #fdd835;
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* ===== Cart Panel ===== */
+#cart-panel {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+#cart-panel h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+#cart-panel ul {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#cart-panel ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#cart-panel p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#clear-cart {
+    padding: 10px;
+    width: 100%;
+    background: #3b141c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#clear-cart:hover {
+    background: #fdd835;
+    color: #000;
+}
+
+
+/* ===== Home Section ===== */
+
+
+
+#home {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(59,20,28,0.7), rgba(59,20,28,0.3)),
+                url('./restaurant-website-hero-background-for-landing-page_T6PO.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#home .content h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+#home .content p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    background: #fdd835;
+    color: #3b141c;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #3b141c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    #home .content h1 {
+        font-size: 2rem;
+    }
+
+    #home .content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* عام للكونتينر */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.05); /* خلفية خفيفة */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* العناوين */
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: #fdd835;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+/* شبكة القوائم */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* كل كارت */
+.card {
+    background: #2c1b16; /* خلفية الكارت */
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* الصور */
+.card img {
+    width: 100%;
+    height: 180px; /* حجم الصور حسب طلبك */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* العناوين داخل الكارت */
+.card h3 {
+    font-size: 1.2rem;
+    color: #fdd835;
+    margin-bottom: 10px;
+}
+
+/* الوصف */
+.card .desc {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* السعر */
+.card .price {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* زر الإضافة للعربة */
+.card .add-to-cart {
+    background: #fdd835;
+    color: #2c1b16;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.card .add-to-cart:hover {
+    background: #fff;
+    color: #2c1b16;
+    transform: scale(1.05);
+}
+
+/* خلفية الصفحة */
+body {
+    background: linear-gradient(120deg, #3b141c, #531b27);
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+/* ===== Testimonials Section ===== */
+.testimonials {
+    background: linear-gradient(135deg, #fdf6e3, black); /* خلفية دافئة وجذابة */
+    padding: 100px 20px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.testimonials-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color:black;
+    margin-bottom: 50px;
+}
+
+/* Container الكروت */
+.testimonials-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* تصميم الكارت */
+.testimonial-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 280px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: "“";
+    font-size: 60px;
+    color: rgba(255,165,0,0.2);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: bold;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+}
+
+/* الصورة */
+.img-box {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #f7b731;
+    transition: transform 0.4s ease;
+}
+
+.client-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-card:hover .img-box {
+    transform: scale(1.1);
+}
+
+/* النصوص */
+.client-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #42210a;
+    margin: 8px 0 3px 0;
+}
+
+.client-job {
+    font-size: 1rem;
+    color: #b36b00;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.client-review {
+    font-size: 1rem;
+    color: #5a3e36;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px){
+    .testimonials-row {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .testimonials-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* ===== Form Container ===== */
+.order-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+/* ===== Form Title ===== */
+.order-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #3a1c1c;
+    margin-bottom: 25px;
+}
+
+/* ===== Input & Textarea ===== */
+.order-container input,
+.order-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    outline: none;
+    background: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+.order-container input:focus,
+.order-container textarea:focus {
+    border-color: #ff7f50;
+    background: #fff;
+}
+
+/* ===== Button ===== */
+.order-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: #ff7f50;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    background: #ff5722;
+}
+
+/* ===== Success/Error Message ===== */
+.order-success {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+
+
+
+
+
+footer h3 {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #c49b63; 
+    transition: 0.3s ease;
+}
+
+ footer h3:hover {
+    color: #c49b63;
+    transform: translateY(-3px);
+}
+
+
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-link.facebook { background-color: #3b5998; }
+.social-link.instagram { background-color: #e4405f; }
+.social-link.linkedin { background-color: #0077b5; }
+.social-link.github { background-color: #333; }
+.social-link.whatsapp { background-color: #25d366; }
+
+.social-link:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}

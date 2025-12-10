@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+
+    <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">
+        <h2>Coffee Shop</h2>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fresh-menu">Fresh </a></li>
+        <li><a href="#coffee-menu">Coffee </a></li>
+        <li><a href="#pizza-menu">Pizza </a></li>
+        <li><a href="#burger-menu">Burger </a></li>
+        <li><a href="#dessert-menu">Dessert </a></li>
+        <li><a href="#footer">Footer</a></li>
+    </ul>
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+    </div>
+</nav>
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span id="close-cart">&times;</span>
+        <h2>سلة الطلبات</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: $0</p>
+    </div>
+</div>
+
+
+
+<section id="home">
+    <div class="content">
+        <h1>Wake Up With the Best Coffee</h1>
+        <p>Start your day with our special freshly brewed coffee</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+
+    
+
+
+<div class="container" id="fresh-menu">
+    <h2 class="title">Fresh Menu</h2>
+    ...
+</div>
+<div class="container" id="fresh-menu"> ... </div>
+<div class="container">
+    <h2 class="title"> Fresh Menu</h2>
+    <div class="underline"></div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="mango.jpg" alt="">
+            <h3>Hot Beverages</h3>
+            <p class="desc">Coffee, Espresso, Cappuccino</p>
+            <p class="price">$4</p>
+            <button class="add-to-cart" data-named="Hot Beverages" data-price="4">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="cold coffe.jpeg" alt="">
+            <h3>Cold Beverages</h3>
+            <p class="desc">Iced Coffee, Frappe, Mocha</p>
+            <p class="price">$5 </p>
+       <button class="add-to-cart" data-named="Cold Beverages" data-price="5">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="refresh.jpeg" alt="">
+            <h3>strawberry</h3>
+            <p class="desc">Refreshing fresh strawberry juice</p>
+            <p class="price"> $8</p>
+            <button class="add-to-cart" data-named="strawberry" data-price="8">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="toot.jpg" alt="">
+            <h3>Mokheto</h3>
+            <p class="desc">Afreshing cuban drink with a mix of lime</p>
+            <p class="price"> $8</p>
+            <button class="add-to-cart" data-named="Mokheto" data-price="8">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="orange.png" alt="">
+            <h3>Orange juice</h3>
+            <p class="desc">fresh-squeezed orange</p>
+            <p class="price"> $6</p>
+         <button class="add-to-cart" data-named="Orange juice" data-price="6">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="bluebery.avif" alt="">
+            <h3>Blueberry juice</h3>
+            <p class="desc">Fresf blueberry juice with a rich falvor</p>
+            <p class="price"> $9</p>
+         <button class="add-to-cart" data-named="Blueberry juice" data-price="9">Add to Cart</button>
+
+        </div>
+
+        
+
+    </div>
+</div><br><hr>
+<hr>
+
+
+
+
+<div class="container" id="coffee-menu">
+    <h2 class="title">Coffee Menu</h2>
+    ...
+</div>
+<div class="container" id="Coffe Menu"> ... </div>
+
+    <div class="container">
+    <h2 class="title">Coffe Menu</h2>
+    <div class="underline"></div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="coffe1.jpeg" alt="">
+            <h3>Espresso</h3>
+            <p class="desc">Strong and bold coffe</p>
+            <p class="price">4$$</p>
+          <button class="add-to-cart" data-named=" Espresso" data-price="4">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="coffe2.jpg" alt="">
+            <h3>Americano</h3>
+            <p class="desc">Espresso diluted with hot water for a smooth</p>
+            <p class="price">6$</p>
+         <button class="add-to-cart" data-named=" Americano" data-price="6">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="coffe3.jpg" alt="">
+            <h3>Latte</h3>
+            <p class="desc">Creamy espresso with plenty of steamed milk</p>
+            <p class="price">5$</p>
+  <button class="add-to-cart" data-named=" Latte" data-price="5">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="coffe4.jpg" alt="">
+            <h3>Mocha</h3>
+            <p class="desc">Espresso mixed with chocalate and steamed milk</p>
+            <p class="price">7$</p>
+     <button class="add-to-cart" data-named=" Mocha" data-price="7">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="coffe5.jpg" alt="">
+            <h3>Affogato</h3>
+            <p class="desc">Espresso poured over a scoop of vanilla ice cream</p>
+            <p class="price">6$</p>
+          <button class="add-to-cart" data-named=" Affogato" data-price="6">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="coffee6.jpeg" alt="">
+            <h3>Ice Coffee</h3>
+            <p class="desc">Chilled coffee served over ice, refreshing and bold</p>
+            <p class="price">6$</p>
+      <button class="add-to-cart" data-named="Ice Coffee" data-price="6">Add to Cart</button>
+
+        </div>
+    </div><br><hr>
+
+
+<div class="container" id="pizza-menu">
+    <h2 class="title">Pizza Menu</h2>
+    ...
+</div>
+<div class="container" id="pizza-menu"> ... </div>
+<div class="container">
+    <h2 class="title">Pizza Menu</h2>
+    <div class="underline"></div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="pizza5.jpeg" alt="">
+            <h3>BBQ Chicken Pizza</h3>
+            <p class="desc">grilled chicken,BBQ sauce</p>
+            <p class="price">10$</p>
+          <button class="add-to-cart" data-named=" BBQ Chicken Pizza" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="pizza6.jpg" alt="">
+            <h3>Jalapeno Pizza</h3>
+            <p class="desc">mozzarella,jalapenos,and chili flakes</p>
+            <p class="price">10$</p>
+     <button class="add-to-cart" data-named=" Jalapeno Pizza" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="pizza1.webp" alt="">
+            <h3>Margherite pizza</h3>
+            <p class="desc">classic pizza with fresh tomatoes,mozzarella</p>
+            <p class="price">10$</p>
+      <button class="add-to-cart" data-named=" Margherite pizza" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="pizza2.jpg" alt="">
+            <h3>Pepperoni pizza</h3>
+            <p class="desc">loaded with spicy pepperioni sclices</p>
+            <p class="price">10$</p>
+          <button class="add-to-cart" data-named=" Pepperoni pizza" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="pizza3.jpeg" alt="">
+            <h3>Hawaiian pizza</h3>
+            <p class="desc">Ham and pineapple on a chessy crust</p>
+            <p class="price">10$</p>
+          <button class="add-to-cart" data-named=" Hawaiian pizza" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="pizza4.jpg" alt="">
+            <h3>Buffalo Checken Pizza</h3>
+            <p class="desc">spicy buffalo chicken with melted cheese</p>
+            <p class="price">12$</p>
+         <button class="add-to-cart" data-named=" Buffalo Checken Pizza" data-price="12">Add to Cart</button>
+
+        </div>
+
+    </div><hr>
+
+
+
+
+
+<div class="container" id="burger-menu">
+    <h2 class="title">Burger Menu</h2>
+    ...
+</div>
+<div class="container" id="burger-menu"> ... </div>
+    <div class="container">
+    <h2 class="title">Burger Menu</h2>
+    <div class="underline"></div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="burger fries.jpeg" alt="">
+            <h3>Classic Burger</h3>
+            <p class="desc">patty with lettuce,tamato,cheese</p>
+            <p class="price">10$</p>
+      <button class="add-to-cart" data-named=" Classic Burger" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="combo.jpeg" alt="">
+            <h3>Combo Burger</h3>
+            <p class="desc">Two beef patties with cheese,lettuce,tomato</p>
+            <p class="price">12$</p>
+      <button class="add-to-cart" data-named=" Combo Burger" data-price="12">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="burger3.jpeg" alt="">
+            <h3>Veggie Burger</h3>
+            <p class="desc">Healthy veggie patty with lettuce,tomato</p>
+            <p class="price">10$</p>
+         <button class="add-to-cart" data-named=" Veggie Burger" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="burger4.jpg" alt="">
+            <h3>Mushroom Burger</h3>
+            <p class="desc">Sauted mushroom,swiss cheese</p>
+            <p class="price">11$</p>
+      <button class="add-to-cart" data-named=" Mushroom Burger" data-price="11">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="burger5.jpg" alt="">
+            <h3>Fish Burger</h3>
+            <p class="desc">Crispy fish fillet with tartar sauce</p>
+            <p class="price">10$</p>
+         <button class="add-to-cart" data-named=" Fish Burger" data-price="10">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="burger6.jpg" alt="">
+            <h3>Bacon Burger</h3>
+            <p class="desc">Crispy bacon,beef patty,chadder cheese</p>
+            <p class="price">10$</p>
+         <button class="add-to-cart" data-named=" Bacon Burger" data-price="10">Add to Cart</button>
+
+        </div>
+    </div><hr>
+
+
+
+
+    <div class="container" id="dessert-menu">
+    <h2 class="title">Dessert Menu</h2>
+    ...
+</div>
+<div class="container" id="Dessert Menu"> ... </div>
+
+    <div class="container">
+    <h2 class="title">Dessert Menu</h2>
+    <div class="underline"></div>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="gallery4.jpeg" alt="">
+            <h3>Dounts</h3>
+            <p class="desc">Soft sweet donte glazed or filled</p>
+            <p class="price">3$</p>
+         <button class="add-to-cart" data-named=" Dounts" data-price="3">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="gellery2.webp" alt="">
+            <h3>CheeseCake</h3>
+            <p class="desc">Creamy cheesecake with a buttery biscuit base</p>
+            <p class="price">4$</p>
+         <button class="add-to-cart" data-named=" CheeseCake" data-price="4">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="gellery3.webp" alt="">
+            <h3>ChocolateCake</h3>
+            <p class="desc">moist chocolate cake layered with checolate ganache</p>
+            <p class="price">5$</p>
+            <button class="add-to-cart" data-named=" ChocolateCake" data-price="5">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="gellery4.jpg" alt="">
+            <h3>Waffle</h3>
+            <p class="desc">Crispy gilden waggle seved with syrup</p>
+            <p class="price">4$</p>
+         <button class="add-to-cart" data-named=" Waffle" data-price="4">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="gellery5.jpeg" alt="">
+            <h3>Macaron</h3>
+            <p class="desc">Delicate french meringue cookie with creamy filling</p>
+            <p class="price">4$</p>
+         <button class="add-to-cart" data-named=" Macaron" data-price="4">Add to Cart</button>
+
+        </div>
+
+        <div class="card">
+            <img src="gallery5.jpeg" alt="">
+            <h3>IceCream</h3>
+            <p class="desc">Scoops of ice cream topped with checolate sauce</p>
+            <p class="price">3$</p>
+     <button class="add-to-cart" data-named=" IceCream" data-price="3">Add to Cart</button>
+
+        </div>
+    </div><br><hr>
+
+
+
+<h1>ارأء العملاء</h1>
+
+
+<section class="testimonials">
+  <h2 class="testimonials-title"></h2>
+
+  <div class="testimonials-row">
+
+
+
+  
+  <div class="testimonial-card">
+    
+      <div class="img-box">
+        <img src="person2.png" class="client-img">
+      </div>
+      
+      <h3 class="client-name"> </h3>
+      <p class="client-job">Sara Ahmed </p>
+      <p class="client-review">التعامل أكثر من رائع!</p>
+    </div>
+
+
+<div class="testimonial-card">
+      <div class="img-box">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="client-img">
+      </div>
+      <h3 class="client-name"> </h3>
+      <p class="client-job"> Doaa Shreif</p>
+      <p class="client-review">     التعامل محترم جدا!</p>
+    </div>
+
+
+
+    <div class="testimonial-card">
+      <div class="img-box">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="client-img">
+      </div>
+      <h3 class="client-name"> </h3>
+      <p class="client-job"> Mazen Ali</p>
+      <p class="client-review">اجوده ممتازه وتعامل محترم!</p>
+    </div>
+
+
+
+    <div class="testimonial-card">
+      <div class="img-box">
+        <img src="person3.jpg" class="client-img">
+      </div>
+      <h3 class="client-name"></h3>
+      <p class="client-job"> Alaa Hisham</p>
+      <p class="client-review">مشاءالله جوده ممتازه </p>
+    </div>
+
+
+
+    <div class="testimonial-card">
+      <div class="img-box">
+        <img src="person.jpg" class="client-img">
+      </div>
+      <h3 class="client-name"> </h3>
+      <p class="client-job"> Omar Hany</p>
+      <p class="client-review">لذيذ جدا والتعامل مشاء الله </p>
+    </div>
+</section>
+
+
+<div class="order-container">
+    <h2>Order Request</h2>
+
+    <form id="orderForm">
+        <div class="order-group">
+            
+            <input type="text" id="name" autofocus placeholder="Enter Name" required>
+        </div>
+
+        <div class="order-group">
+            
+            <input type="tel" id="phone" autofocus placeholder="Enter Phone" required>
+        </div>
+
+        <div class="order-group">
+            
+            <input type="text" id="address" autofocus placeholder="Enter Adress" required>
+        </div>
+
+        <div class="order-group">
+            
+            <textarea id="order" autofocus placeholder="Details" required></textarea>
+        </div>
+
+        <button type="submit" class="order-btn">Send Order</button>
+
+        <p id="message" class="order-success"></p>
+    </form>
+</div>
+
+
+<!-- ربط مكتبة Font Awesome -->
+ <footer id="footer" class="footer">
+  
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Soial Netwoking</h3>
+    <p>تابعنا على وسائل التواصل الاجتماعي:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/mohamed-youssif-48b799369?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/my7422362-wq" target="_blank" class="social-link github"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2025 Your Project Name. All Rights Reserved.
+    By:Muhammed Youssef
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
